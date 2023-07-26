@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        /* We have to set the box-sizing to border-box because this makes sure that the padding and eventually borders are included in the total width and height of the elements. */
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+        /* We are making header section because navbar doesn't always at the top. Sometimes you'll want the navbar at the bottom of header. Because it looks good. And you can add the sticky property to these codes. I will show you how to that at horizantal_navbar_3 */
+    .header{
+        background-color: gainsboro;
+        text-align: center;
+        padding: 20px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        color: white;
+    }
+    /* When we get the maus over the links, link's appearance will change and a:hover codes are how it will. */
+    a:hover{
+        background-color: white;
+        color: black;
+        text-decoration:underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li style="float: right;"><a href="#">Link</a></li>
+        </ul>
+    </div>
+</body>
+</html>
